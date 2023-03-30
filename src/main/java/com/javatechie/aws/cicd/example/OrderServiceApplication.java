@@ -16,12 +16,10 @@ import java.util.stream.Collectors;
 @SpringBootApplication
 @RestController
 @RequestMapping("/orders")
-public class OrderServiceApplication implements CommandLineRunner {
+public class OrderServiceApplication  {
 
     @Autowired
     private OrderDao orderDao;
-
-    private OrderRepo orderRepo;
     @GetMapping
     public List<Order> fetchOrders() {
         return orderDao.getOrders().stream().
@@ -32,12 +30,5 @@ public class OrderServiceApplication implements CommandLineRunner {
         SpringApplication.run(OrderServiceApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        orderRepo.save(new Order(1,"Pen",100,2));
-        orderRepo.save(new Order(2,"Pencil",101,3));
-        orderRepo.save(new Order(3,"Laptop",100,2000000));
-        orderRepo.save(new Order(4,"Desktop",10,200000));
-        orderRepo.save(new Order(5,"Paper",1001,34568));
-    }
+
 }
