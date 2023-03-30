@@ -1,3 +1,6 @@
+com\javatechie\aws\cicd\example\controller\HomeController.class
+com\javatechie\aws\cicd\example\controller\OrderH2Controller.class
 com\javatechie\aws\cicd\example\OrderDao.class
+com\javatechie\aws\cicd\example\repo\OrderRepo.class
 com\javatechie\aws\cicd\example\OrderServiceApplication.class
 com\javatechie\aws\cicd\example\Order.class
