@@ -34,10 +34,10 @@ public class OrderServiceApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        orderRepo.save(new Order(1,"Pen",100,2L));
-        orderRepo.save(new Order(2,"Pencil",101,3L));
-        orderRepo.save(new Order(3,"Laptop",100,2000000L));
-        orderRepo.save(new Order(4,"Desktop",10,200000L));
-        orderRepo.save(new Order(5,"Paper",1001,34568L));
+        orderRepo.save(new Order(1,"Pen",100,2));
+        orderRepo.save(new Order(2,"Pencil",101,3));
+        orderRepo.save(new Order(3,"Laptop",100,2000000));
+        orderRepo.save(new Order(4,"Desktop",10,200000));
+        orderRepo.save(new Order(5,"Paper",1001,34568));
     }
 }
